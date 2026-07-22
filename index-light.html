@@ -23,6 +23,18 @@
   .wv-btn { font-family: 'Pretendard', sans-serif; font-size: 14px; font-weight: 700; color: #0a0716; background: var(--accent); border: none; padding: 10px 20px; border-radius: 999px; cursor: pointer; letter-spacing: 0.01em; box-shadow: 0 6px 20px rgba(244,210,112,0.24); }
   .wv-cta { font-family: 'Pretendard', sans-serif; font-size: 17px; font-weight: 700; color: #0a0716; background: var(--accent); border: none; padding: 18px 44px; border-radius: 999px; cursor: pointer; letter-spacing: 0.01em; box-shadow: 0 14px 40px rgba(244,210,112,0.3); transition: transform 0.25s ease, box-shadow 0.25s ease; }
   .wv-cta:hover { transform: translateY(-3px); box-shadow: 0 20px 52px rgba(244,210,112,0.42); }
+
+  .wv-switch { position: fixed; top: 14px; left: 50%; transform: translateX(-50%); z-index: 99999; display: inline-flex; gap: 2px; max-width: 96vw; border-radius: 999px; padding: 4px; box-shadow: 0 8px 24px rgba(0,0,0,0.35); font-family: 'Pretendard', system-ui, sans-serif; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+  .wv-switch a { display: block; padding: 7px 15px; border-radius: 999px; font-size: 12.5px; font-weight: 700; text-decoration: none; letter-spacing: 0.01em; white-space: nowrap; transition: all .2s; }
+  @media (max-width: 640px) {
+    .wv-switch { top: auto; bottom: 16px; }
+    .wv-switch a { padding: 7px 12px; font-size: 12px; }
+  }
+
+  @media (max-width: 640px) {
+    nav { padding: 14px 18px !important; }
+    #wv-toast { bottom: 88px !important; }
+  }
 </style>
 </head>
 <body>
@@ -282,7 +294,7 @@
   };
 })();
 </script>
-<div style="position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:99999;display:inline-flex;gap:2px;max-width:96vw;background:rgba(255,255,255,0.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(0,0,0,0.12);border-radius:999px;padding:4px;box-shadow:0 8px 24px rgba(0,0,0,0.35);font-family:'Pretendard',system-ui,sans-serif;"><a href="nodesign.html" style="display:block;padding:7px 15px;border-radius:999px;font-size:12.5px;font-weight:700;text-decoration:none;letter-spacing:0.01em;white-space:nowrap;transition:all .2s;background:transparent;color:#4a4270;">노디자인</a><a href="index.html" style="display:block;padding:7px 15px;border-radius:999px;font-size:12.5px;font-weight:700;text-decoration:none;letter-spacing:0.01em;white-space:nowrap;transition:all .2s;background:transparent;color:#4a4270;">디자인(다크)</a><a href="index-light.html" style="display:block;padding:7px 15px;border-radius:999px;font-size:12.5px;font-weight:700;text-decoration:none;letter-spacing:0.01em;white-space:nowrap;transition:all .2s;background:#f4d270;color:#0a0716;box-shadow:0 2px 8px rgba(244,210,112,0.35);">디자인(화이트)</a></div>
+<div class="wv-switch" style="background:rgba(255,255,255,0.9);border:1px solid rgba(0,0,0,0.12);"><a href="nodesign.html" style="background:transparent;color:#4a4270;">노디자인</a><a href="index.html" style="background:transparent;color:#4a4270;">디자인(다크)</a><a href="index-light.html" style="background:#f4d270;color:#0a0716;box-shadow:0 2px 8px rgba(244,210,112,0.35);">디자인(화이트)</a></div>
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
