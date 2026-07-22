@@ -26,9 +26,9 @@
 </style>
 </head>
 <body>
-<div id="wv-root" style="position: relative; min-height: 100vh; overflow-x: clip; background: #060509;">
+<div id="wv-root" style="position: relative; min-height: 100vh; overflow-x: clip; background-color: #060509; background-image: url('images/route.png'), url('images/bg_el.png'), url('images/bg_base.png'); background-repeat: repeat-y, repeat-y, repeat-y; background-position: top center, top center, top center; background-size: 100% auto, 100% auto, 100% auto;">
 
-  <svg id="wv-track" preserveAspectRatio="none" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 0; pointer-events: none;"></svg>
+  <div aria-hidden="true" style="position: absolute; inset: 0; z-index: 0; pointer-events: none; background: linear-gradient(180deg, rgba(6,5,9,0.62) 0%, rgba(6,5,9,0.86) 100%);"></div>
 
   <nav style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 16px 28px; background: rgba(6,5,9,0.8); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.07);">
     <a href="index.html" style="display: flex; align-items: center;">
@@ -52,7 +52,7 @@
   <section style="position: relative; z-index: 1; padding: clamp(60px, 10vw, 120px) 24px;">
     <div style="max-width: 860px; margin: 0 auto; text-align: center;">
       <div style="font-family: 'Archivo', sans-serif; font-size: 13px; letter-spacing: 0.4em; color: var(--accent); text-transform: uppercase; margin-bottom: 18px;">About</div>
-      <p style="font-size: clamp(18px, 2.6vw, 23px); line-height: 1.75; color: #e4dcff; font-weight: 500; margin: 0 0 56px; word-break: keep-all; text-wrap: pretty;">하이원 원더버스는 하이원리조트 곳곳에서 펼쳐지는 상설공연과 시즌별 테마공연, 이벤트 및 체험 콘텐츠를 하나로 연결한 <span style="color: var(--accent); font-weight: 700;">연간 공연 프로젝트</span>입니다.</p>
+      <p style="font-size: clamp(18px, 2.6vw, 23px); line-height: 1.75; color: #e4dcff; font-weight: 500; margin: 0 0 56px; padding: 22px 28px; border-radius: 18px; background: rgba(10,8,20,0.55); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); word-break: keep-all; text-wrap: pretty;">하이원 원더버스는 하이원리조트 곳곳에서 펼쳐지는 상설공연과 시즌별 테마공연, 이벤트 및 체험 콘텐츠를 하나로 연결한 <span style="color: var(--accent); font-weight: 700;">연간 공연 프로젝트</span>입니다.</p>
       <div style="position: relative; padding: clamp(38px, 6vw, 60px) clamp(26px, 5vw, 54px); border-radius: 28px; background: linear-gradient(180deg, rgba(24,17,46,0.86), rgba(11,9,20,0.9)); border: 1px solid rgba(244,210,112,0.22); box-shadow: 0 30px 80px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.04); backdrop-filter: blur(3px);">
         <h2 style="font-size: clamp(21px, 3.4vw, 30px); line-height: 1.5; font-weight: 700; color: #fff; margin: 0 0 32px; word-break: keep-all;">하이원의 모든 순간을 하나의 세계로 연결하는 이름<br><span style="font-family: 'Archivo', sans-serif; font-weight: 900; letter-spacing: 0.02em; color: var(--accent);">"HIGH1 WONDERVERSE"</span></h2>
         <div style="display: flex; flex-direction: column; gap: 18px; font-size: clamp(15px, 2vw, 17px); line-height: 1.85; color: #c8bdea; word-break: keep-all; text-wrap: pretty;">
@@ -74,14 +74,12 @@
         <p style="font-size: clamp(16px, 2.2vw, 20px); color: #b7abdc; font-weight: 500; margin: 0;">하이원 곳곳에서 만나는 8가지 테마 여정</p>
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(272px, 1fr)); gap: 26px;">
-        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(45,35,78,0.96),rgba(26,20,46,0.97));border:1px solid rgba(244,210,112,0.28);box-shadow:0 18px 48px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.04),inset 0 1px 0 rgba(255,255,255,0.06);">
+        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(58,46,98,0.985),rgba(32,25,56,0.99));border:1px solid rgba(244,210,112,0.45);box-shadow:0 26px 60px rgba(0,0,0,0.62),0 0 0 1px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08);">
           <div style="position:relative;height:190px;overflow:hidden;background:#0b0917;">
-            <img src="images/casino.jpg" alt="THE GOLDEN MOMENT" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
-            <span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,5,9,0) 55%,rgba(6,5,9,0.55));pointer-events:none;"></span>
+            <img src="images/casino.jpg" alt="Casino Stop" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
             <span style="position:absolute;top:12px;left:14px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:800;color:var(--accent);background:rgba(10,7,22,0.72);border:1px solid rgba(244,210,112,0.35);border-radius:8px;padding:3px 9px;">01</span>
           </div>
-          <div style="display:flex;flex-direction:column;flex:1;padding:24px;">
-            <div style="font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.18em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">Casino Stop</div>
+          <div style="display:flex;flex-direction:column;flex:1;padding:22px 24px 24px;">
             <h3 style="font-family:'Archivo',sans-serif;font-size:15px;font-weight:800;color:#fff;margin:0 0 14px;letter-spacing:-0.01em;line-height:1.3;white-space:nowrap;">THE GOLDEN MOMENT</h3>
             <div style="display:flex;flex-direction:column;gap:3px;margin-bottom:20px;">
               <p style="margin:0;font-size:14.5px;line-height:1.5;color:#c3b8e6;word-break:keep-all;">황금빛 행운이 소용돌이 치는 곳</p>
@@ -96,14 +94,12 @@
             </div>
           </div>
         </article>
-        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(45,35,78,0.96),rgba(26,20,46,0.97));border:1px solid rgba(244,210,112,0.28);box-shadow:0 18px 48px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.04),inset 0 1px 0 rgba(255,255,255,0.06);">
+        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(58,46,98,0.985),rgba(32,25,56,0.99));border:1px solid rgba(244,210,112,0.45);box-shadow:0 26px 60px rgba(0,0,0,0.62),0 0 0 1px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08);">
           <div style="position:relative;height:190px;overflow:hidden;background:#0b0917;">
-            <img src="images/hotel.jpg" alt="HIGH1 THE LIVE FRAME, K" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
-            <span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,5,9,0) 55%,rgba(6,5,9,0.55));pointer-events:none;"></span>
+            <img src="images/hotel.jpg" alt="Hotel Stop" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
             <span style="position:absolute;top:12px;left:14px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:800;color:var(--accent);background:rgba(10,7,22,0.72);border:1px solid rgba(244,210,112,0.35);border-radius:8px;padding:3px 9px;">02</span>
           </div>
-          <div style="display:flex;flex-direction:column;flex:1;padding:24px;">
-            <div style="font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.18em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">Hotel Stop</div>
+          <div style="display:flex;flex-direction:column;flex:1;padding:22px 24px 24px;">
             <h3 style="font-family:'Archivo',sans-serif;font-size:15px;font-weight:800;color:#fff;margin:0 0 14px;letter-spacing:-0.01em;line-height:1.3;white-space:nowrap;">HIGH1 THE LIVE FRAME, K</h3>
             <div style="display:flex;flex-direction:column;gap:3px;margin-bottom:20px;">
               <p style="margin:0;font-size:14.5px;line-height:1.5;color:#c3b8e6;word-break:keep-all;">하이원에 도착한 순간!</p>
@@ -118,14 +114,12 @@
             </div>
           </div>
         </article>
-        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(45,35,78,0.96),rgba(26,20,46,0.97));border:1px solid rgba(244,210,112,0.28);box-shadow:0 18px 48px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.04),inset 0 1px 0 rgba(255,255,255,0.06);">
+        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(58,46,98,0.985),rgba(32,25,56,0.99));border:1px solid rgba(244,210,112,0.45);box-shadow:0 26px 60px rgba(0,0,0,0.62),0 0 0 1px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08);">
           <div style="position:relative;height:190px;overflow:hidden;background:#0b0917;">
-            <img src="images/media.jpg" alt="AWAKENING OF LIGHT" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
-            <span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,5,9,0) 55%,rgba(6,5,9,0.55));pointer-events:none;"></span>
+            <img src="images/media.jpg" alt="Media Stop" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
             <span style="position:absolute;top:12px;left:14px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:800;color:var(--accent);background:rgba(10,7,22,0.72);border:1px solid rgba(244,210,112,0.35);border-radius:8px;padding:3px 9px;">03</span>
           </div>
-          <div style="display:flex;flex-direction:column;flex:1;padding:24px;">
-            <div style="font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.18em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">Media Stop</div>
+          <div style="display:flex;flex-direction:column;flex:1;padding:22px 24px 24px;">
             <h3 style="font-family:'Archivo',sans-serif;font-size:15px;font-weight:800;color:#fff;margin:0 0 14px;letter-spacing:-0.01em;line-height:1.3;white-space:nowrap;">AWAKENING OF LIGHT</h3>
             <div style="display:flex;flex-direction:column;gap:3px;margin-bottom:20px;">
               <p style="margin:0;font-size:14.5px;line-height:1.5;color:#c3b8e6;word-break:keep-all;">어둠 속에서 깨어난 빛의 파동</p>
@@ -140,14 +134,12 @@
             </div>
           </div>
         </article>
-        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(45,35,78,0.96),rgba(26,20,46,0.97));border:1px solid rgba(244,210,112,0.28);box-shadow:0 18px 48px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.04),inset 0 1px 0 rgba(255,255,255,0.06);">
+        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(58,46,98,0.985),rgba(32,25,56,0.99));border:1px solid rgba(244,210,112,0.45);box-shadow:0 26px 60px rgba(0,0,0,0.62),0 0 0 1px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08);">
           <div style="position:relative;height:190px;overflow:hidden;background:#0b0917;">
-            <img src="images/water.jpg" alt="SPLASH CARNIVAL" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
-            <span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,5,9,0) 55%,rgba(6,5,9,0.55));pointer-events:none;"></span>
+            <img src="images/water.jpg" alt="Water Stop" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
             <span style="position:absolute;top:12px;left:14px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:800;color:var(--accent);background:rgba(10,7,22,0.72);border:1px solid rgba(244,210,112,0.35);border-radius:8px;padding:3px 9px;">04</span>
           </div>
-          <div style="display:flex;flex-direction:column;flex:1;padding:24px;">
-            <div style="font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.18em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">Water Stop</div>
+          <div style="display:flex;flex-direction:column;flex:1;padding:22px 24px 24px;">
             <h3 style="font-family:'Archivo',sans-serif;font-size:15px;font-weight:800;color:#fff;margin:0 0 14px;letter-spacing:-0.01em;line-height:1.3;white-space:nowrap;">SPLASH CARNIVAL</h3>
             <div style="display:flex;flex-direction:column;gap:3px;margin-bottom:20px;">
               <p style="margin:0;font-size:14.5px;line-height:1.5;color:#c3b8e6;word-break:keep-all;">하이원 워터월드에서 펼쳐지는</p>
@@ -161,14 +153,12 @@
             </div>
           </div>
         </article>
-        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(45,35,78,0.96),rgba(26,20,46,0.97));border:1px solid rgba(244,210,112,0.28);box-shadow:0 18px 48px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.04),inset 0 1px 0 rgba(255,255,255,0.06);">
+        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(58,46,98,0.985),rgba(32,25,56,0.99));border:1px solid rgba(244,210,112,0.45);box-shadow:0 26px 60px rgba(0,0,0,0.62),0 0 0 1px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08);">
           <div style="position:relative;height:190px;overflow:hidden;background:#0b0917;">
-            <img src="images/halloween.jpg" alt="DIA DE HIGH1" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
-            <span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,5,9,0) 55%,rgba(6,5,9,0.55));pointer-events:none;"></span>
+            <img src="images/halloween.jpg" alt="Halloween Stop" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
             <span style="position:absolute;top:12px;left:14px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:800;color:var(--accent);background:rgba(10,7,22,0.72);border:1px solid rgba(244,210,112,0.35);border-radius:8px;padding:3px 9px;">05</span>
           </div>
-          <div style="display:flex;flex-direction:column;flex:1;padding:24px;">
-            <div style="font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.18em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">Halloween Stop</div>
+          <div style="display:flex;flex-direction:column;flex:1;padding:22px 24px 24px;">
             <h3 style="font-family:'Archivo',sans-serif;font-size:15px;font-weight:800;color:#fff;margin:0 0 14px;letter-spacing:-0.01em;line-height:1.3;white-space:nowrap;">DIA DE HIGH1</h3>
             <div style="display:flex;flex-direction:column;gap:3px;margin-bottom:20px;">
               <p style="margin:0;font-size:14.5px;line-height:1.5;color:#c3b8e6;word-break:keep-all;">&quot;죽은 자의 날&quot;에서 영감을 받은</p>
@@ -182,14 +172,12 @@
             </div>
           </div>
         </article>
-        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(45,35,78,0.96),rgba(26,20,46,0.97));border:1px solid rgba(244,210,112,0.28);box-shadow:0 18px 48px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.04),inset 0 1px 0 rgba(255,255,255,0.06);">
+        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(58,46,98,0.985),rgba(32,25,56,0.99));border:1px solid rgba(244,210,112,0.45);box-shadow:0 26px 60px rgba(0,0,0,0.62),0 0 0 1px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08);">
           <div style="position:relative;height:190px;overflow:hidden;background:#0b0917;">
-            <img src="images/ski.jpg" alt="FIRE ON SNOW" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
-            <span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,5,9,0) 55%,rgba(6,5,9,0.55));pointer-events:none;"></span>
+            <img src="images/ski.jpg" alt="Ski Stop" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
             <span style="position:absolute;top:12px;left:14px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:800;color:var(--accent);background:rgba(10,7,22,0.72);border:1px solid rgba(244,210,112,0.35);border-radius:8px;padding:3px 9px;">06</span>
           </div>
-          <div style="display:flex;flex-direction:column;flex:1;padding:24px;">
-            <div style="font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.18em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">Ski Stop</div>
+          <div style="display:flex;flex-direction:column;flex:1;padding:22px 24px 24px;">
             <h3 style="font-family:'Archivo',sans-serif;font-size:15px;font-weight:800;color:#fff;margin:0 0 14px;letter-spacing:-0.01em;line-height:1.3;white-space:nowrap;">FIRE ON SNOW</h3>
             <div style="display:flex;flex-direction:column;gap:3px;margin-bottom:20px;">
               <p style="margin:0;font-size:14.5px;line-height:1.5;color:#c3b8e6;word-break:keep-all;">스키장의 리프트가 멈춘 고요한 밤</p>
@@ -203,14 +191,12 @@
             </div>
           </div>
         </article>
-        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(45,35,78,0.96),rgba(26,20,46,0.97));border:1px solid rgba(244,210,112,0.28);box-shadow:0 18px 48px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.04),inset 0 1px 0 rgba(255,255,255,0.06);">
+        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(58,46,98,0.985),rgba(32,25,56,0.99));border:1px solid rgba(244,210,112,0.45);box-shadow:0 26px 60px rgba(0,0,0,0.62),0 0 0 1px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08);">
           <div style="position:relative;height:190px;overflow:hidden;background:#0b0917;">
-            <img src="images/casino.jpg" alt="WINTER NORDIC VILLAGE" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
-            <span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,5,9,0) 55%,rgba(6,5,9,0.55));pointer-events:none;"></span>
+            <img src="images/casino.jpg" alt="X-mas Stop" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
             <span style="position:absolute;top:12px;left:14px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:800;color:var(--accent);background:rgba(10,7,22,0.72);border:1px solid rgba(244,210,112,0.35);border-radius:8px;padding:3px 9px;">07</span>
           </div>
-          <div style="display:flex;flex-direction:column;flex:1;padding:24px;">
-            <div style="font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.18em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">X-mas Stop</div>
+          <div style="display:flex;flex-direction:column;flex:1;padding:22px 24px 24px;">
             <h3 style="font-family:'Archivo',sans-serif;font-size:15px;font-weight:800;color:#fff;margin:0 0 14px;letter-spacing:-0.01em;line-height:1.3;white-space:nowrap;">WINTER NORDIC VILLAGE</h3>
             <div style="display:flex;flex-direction:column;gap:3px;margin-bottom:20px;">
               <p style="margin:0;font-size:14.5px;line-height:1.5;color:#c3b8e6;word-break:keep-all;">클래식한 감성과 현대적 연출</p>
@@ -225,14 +211,12 @@
             </div>
           </div>
         </article>
-        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(45,35,78,0.96),rgba(26,20,46,0.97));border:1px solid rgba(244,210,112,0.28);box-shadow:0 18px 48px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.04),inset 0 1px 0 rgba(255,255,255,0.06);">
+        <article class="wv-card" style="display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,rgba(58,46,98,0.985),rgba(32,25,56,0.99));border:1px solid rgba(244,210,112,0.45);box-shadow:0 26px 60px rgba(0,0,0,0.62),0 0 0 1px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.08);">
           <div style="position:relative;height:190px;overflow:hidden;background:#0b0917;">
-            <img src="images/child.jpg" alt="DYNAMIC COLOR PLAY" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
-            <span style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,5,9,0) 55%,rgba(6,5,9,0.55));pointer-events:none;"></span>
+            <img src="images/child.jpg" alt="Child Stop" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
             <span style="position:absolute;top:12px;left:14px;font-family:'Archivo',sans-serif;font-size:13px;font-weight:800;color:var(--accent);background:rgba(10,7,22,0.72);border:1px solid rgba(244,210,112,0.35);border-radius:8px;padding:3px 9px;">08</span>
           </div>
-          <div style="display:flex;flex-direction:column;flex:1;padding:24px;">
-            <div style="font-family:'Archivo',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.18em;color:var(--accent);text-transform:uppercase;margin-bottom:8px;">Child Stop</div>
+          <div style="display:flex;flex-direction:column;flex:1;padding:22px 24px 24px;">
             <h3 style="font-family:'Archivo',sans-serif;font-size:15px;font-weight:800;color:#fff;margin:0 0 14px;letter-spacing:-0.01em;line-height:1.3;white-space:nowrap;">DYNAMIC COLOR PLAY</h3>
             <div style="display:flex;flex-direction:column;gap:3px;margin-bottom:20px;">
               <p style="margin:0;font-size:14.5px;line-height:1.5;color:#c3b8e6;word-break:keep-all;">어린이날 주간</p>
@@ -284,89 +268,7 @@
 
 <script>
 (function(){
-  var SHOW_TRACK = true;
-  var root = document.getElementById('wv-root');
-  var svg = document.getElementById('wv-track');
-  var dt, tt;
-
-  function buildRail(w, h, side){
-    var L = side === 'L';
-    var edge = L ? w*0.045 : w*0.955;
-    var inner = L ? w*0.14 : w*0.86;
-    var period = L ? 600 : 720;
-    var startY = -100;
-    var endY = h + 200;
-    var waves = Math.max(3, Math.round((endY - startY)/period));
-    var seg = (endY - startY)/waves;
-    var x0 = edge, y0 = startY + (L ? 0 : seg*0.4);
-    var d = 'M ' + x0.toFixed(1) + ' ' + y0.toFixed(1);
-    for (var i=0;i<waves;i++){
-      var goInner = i % 2 === 0;
-      var f = 0.5 + 0.5*(((i*3 + (L?0:2)) % 4)/3);
-      var x1 = goInner ? (edge + (inner-edge)*f) : edge;
-      var y2 = y0 + seg;
-      var cy = y0 + (y2-y0)*0.5;
-      d += ' C ' + x0.toFixed(1) + ' ' + cy.toFixed(1) + ', ' + x1.toFixed(1) + ' ' + cy.toFixed(1) + ', ' + x1.toFixed(1) + ' ' + y2.toFixed(1);
-      x0 = x1; y0 = y2;
-    }
-    return d;
-  }
-
-  function scenery(w, h, pts){
-    var gL = function(x){ return x*w; }, gT = function(y){ return y*h; };
-    var far = function(x, y, r){ var r2=r*r; for(var i=0;i<pts.length;i++){ var dx=pts[i][0]-x, dy=pts[i][1]-y; if(dx*dx+dy*dy<r2) return false; } return true; };
-    var tree = function(fx, fy, c, s){ var x=gL(fx), y=gT(fy); return '<g transform="translate('+x.toFixed(0)+' '+y.toFixed(0)+') scale('+s+')"><polygon points="0,-26 13,2 -13,2" fill="'+c+'"/><polygon points="0,-10 17,26 -17,26" fill="'+c+'"/><rect x="-3.5" y="26" width="7" height="10" rx="2" fill="#7a5a3a"/></g>'; };
-    var dot = function(fx, fy, c, r){ return '<circle cx="'+gL(fx).toFixed(0)+'" cy="'+gT(fy).toFixed(0)+'" r="'+r+'" fill="'+c+'"/>'; };
-    var tri = function(fx, fy, c){ var x=gL(fx), y=gT(fy); return '<polygon points="'+x+','+(y-9)+' '+(x+8)+','+(y+6)+' '+(x-8)+','+(y+6)+'" fill="'+c+'"/>'; };
-    var blob = function(fx, fy, rot){ var x=gL(fx), y=gT(fy); return '<ellipse cx="'+x.toFixed(0)+'" cy="'+y.toFixed(0)+'" rx="52" ry="36" fill="#2fb98a" opacity="0.9" transform="rotate('+rot+' '+x.toFixed(0)+' '+y.toFixed(0)+')"/>'; };
-    var leaf = function(fx, fy, rot){ var x=gL(fx), y=gT(fy); return '<path d="M '+x+' '+y+' C '+(x-30)+' '+(y-14)+', '+(x-30)+' '+(y+22)+', '+x+' '+(y+30)+' C '+(x+30)+' '+(y+22)+', '+(x+30)+' '+(y-14)+', '+x+' '+y+' Z" fill="#2fb98a" opacity="0.92" transform="rotate('+rot+' '+x+' '+y+')"/>'; };
-    var train = function(fx, fy){ var x=gL(fx), y=gT(fy); return '<g transform="translate('+x.toFixed(0)+' '+y.toFixed(0)+') rotate(16)"><rect x="0" y="0" width="150" height="46" rx="12" fill="#0b0913" stroke="#8f70ef" stroke-width="4"/><rect x="12" y="10" width="22" height="18" rx="4" fill="#4d7cff"/><rect x="42" y="10" width="22" height="18" rx="4" fill="#4d7cff"/><rect x="72" y="10" width="22" height="18" rx="4" fill="#4d7cff"/><rect x="102" y="10" width="34" height="18" rx="4" fill="#f4d270"/><circle cx="34" cy="52" r="9" fill="#2fb98a"/><circle cx="116" cy="52" r="9" fill="#2fb98a"/></g>'; };
-
-    var G="#2fb98a", P="#8f70ef", Y="#f4d270", K="#ff7ea6", B="#4d7cff";
-    var s = "";
-    var put = function(ok, str){ if(ok) s += str; };
-    [[0.28,0.20,-14],[0.72,0.42,16],[0.26,0.70,8],[0.74,0.86,-10],[0.30,0.44,6]].forEach(function(c){ put(far(gL(c[0]), gT(c[1]), 78), blob(c[0], c[1], c[2])); });
-    [[0.31,0.30,20],[0.70,0.60,-25],[0.29,0.55,-12],[0.68,0.26,18]].forEach(function(c){ put(far(gL(c[0]), gT(c[1]), 50), leaf(c[0], c[1], c[2])); });
-    [[0.23,0.11,P,1.0],[0.77,0.16,G,0.9],[0.25,0.34,Y,0.85],[0.75,0.46,P,1.0],[0.22,0.58,G,0.9],[0.78,0.64,Y,0.85],[0.24,0.83,P,0.95],[0.76,0.90,G,1.0]].forEach(function(t){ put(far(gL(t[0]), gT(t[1])+10, 48), tree(t[0], t[1], t[2], t[3])); });
-    [[0.40,0.05,Y],[0.58,0.055,K],[0.34,0.22,P],[0.66,0.24,B],[0.30,0.64,K],[0.68,0.74,Y],[0.50,0.10,G]].forEach(function(t){ put(far(gL(t[0]), gT(t[1]), 30), tri(t[0], t[1], t[2])); });
-    [[0.36,0.09,G,5],[0.63,0.09,K,5],[0.32,0.40,Y,5],[0.70,0.34,K,4.5],[0.30,0.80,Y,5],[0.66,0.90,P,5],[0.50,0.03,B,4],[0.28,0.50,Y,4],[0.73,0.52,G,4],[0.44,0.30,P,4]].forEach(function(t){ put(far(gL(t[0]), gT(t[1]), 26), dot(t[0], t[1], t[2], t[3])); });
-    put(far(gL(0.60), gT(0.90), 120), train(0.60, 0.90));
-    return s;
-  }
-
-  function draw(){
-    if(!root || !svg) return;
-    var w = root.clientWidth;
-    var h = root.scrollHeight;
-    if(!w || !h) return;
-    svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
-    svg.setAttribute('width', w);
-    svg.style.height = h + 'px';
-    var dL = buildRail(w, h, 'L'), dR = buildRail(w, h, 'R');
-    var rail = function(d){
-      return '<path d="'+d+'" fill="none" stroke="#33285a" stroke-width="24" stroke-linecap="round"/>'
-        + '<path d="'+d+'" fill="none" stroke="#7a62c9" stroke-width="20" stroke-linecap="round"/>'
-        + '<path d="'+d+'" fill="none" stroke="#e9e3ff" stroke-width="20" stroke-dasharray="96 96"/>';
-    };
-    var deco = "";
-    if(SHOW_TRACK){
-      var NS = "http://www.w3.org/2000/svg";
-      var tmp = document.createElementNS(NS, "path");
-      svg.appendChild(tmp);
-      var pts = [];
-      [dL, dR].forEach(function(dd){
-        tmp.setAttribute("d", dd);
-        var len = tmp.getTotalLength();
-        for(var l=0;l<=len;l+=20){ var p = tmp.getPointAtLength(l); pts.push([p.x, p.y]); }
-      });
-      svg.removeChild(tmp);
-      deco = scenery(w, h, pts);
-    }
-    svg.innerHTML = SHOW_TRACK ? ('<g opacity="0.6">'+rail(dL)+rail(dR)+'</g>' + deco) : '';
-  }
-
-  function scheduleDraw(){ clearTimeout(dt); dt = setTimeout(draw, 60); }
-
+  var tt;
   window.wvOpenSurvey = function(){
     var t = document.getElementById('wv-toast');
     if(!t) return;
@@ -378,12 +280,6 @@
     clearTimeout(tt);
     tt = setTimeout(function(){ t.style.display = 'none'; }, 3200);
   };
-
-  draw();
-  [200, 600, 1400].forEach(function(ms){ setTimeout(draw, ms); });
-  window.addEventListener('resize', scheduleDraw);
-  if(window.ResizeObserver){ new ResizeObserver(scheduleDraw).observe(root); }
-  if(document.fonts && document.fonts.ready) document.fonts.ready.then(draw);
 })();
 </script>
 <div style="position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:99999;display:inline-flex;gap:2px;background:rgba(10,8,20,0.82);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.14);border-radius:999px;padding:4px;box-shadow:0 8px 24px rgba(0,0,0,0.45);font-family:'Pretendard',system-ui,sans-serif;">
